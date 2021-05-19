@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style type="text/css">
+    body, html {
+      height: 100%
+    }
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="bgimg">
+    <div class="middle">
+
+      {% if sub %}
+        <h1>Thank you for subscribing to our newsletter</h1>
+      {% else %}
+
+        <h1>We're sorry to hear that you want to <br>un-subscribe to our newsletter</h1>
+        <br>
+        <h2>Re-subscribe if you change your mind</h2>
+
+      {% endif %}
+      <hr>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
